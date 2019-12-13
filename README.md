@@ -14,3 +14,39 @@ Projeto de um Ponto de Venda com cadastros de Cliente, Produto e Venda, utilizan
 ## Sobre o Laravel
 
 O Laravel é um framework de desenvolvimento rápido para PHP, livre e de código aberto. Cuja o principal objetivo é permitir que você trabalhe de forma estruturada e rápida.
+
+## Instalação do Ambiente no Ubuntu 18.04
+
+Instalando o PHP
+    sudo apt-get install php
+
+Verificando se foi instalado corretamente
+    php -v
+
+Instalando a extensão Mbstring do php
+    sudo apt-get install php-mbstring
+
+Instalando a extensão do suporte para o XML
+    sudo apt-get install php-xml
+    
+Instalando a extensão do zip do php
+    sudo apt-get install php-zip
+
+Baixando e instalando o composer
+    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+Testando o composer
+    composer
+
+Rodar o composer sem o sudo
+    sudo chown -R $USER ~/.composer/
+
+Inicializar um projeto sem o instalador
+    composer create-project --prefer-dist laravel/laravel project-name
+    
+Instalando o instalador do laravel
+    composer global require "laravel/installer"
+
+Para o comando laravel funcionar precisamos adicionar uma linha no arquivo bashrc se você estiver usando apenas o terminal.
+    echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc

@@ -17,36 +17,36 @@ O Laravel é um framework de desenvolvimento rápido para PHP, livre e de códig
 
 ## Instalação do Ambiente no Ubuntu 18.04
 
-Instalando o PHP<br>
+Instalando o PHP:<br>
     sudo apt-get install php
 
-Verificando se foi instalado corretamente<br>
+Verificando se foi instalado corretamente:<br>
     php -v
 
-Instalando a extensão Mbstring do php<br>
+Instalando a extensão Mbstring do php:<br>
     sudo apt-get install php-mbstring
 
-Instalando a extensão do suporte para o XML<br>
+Instalando a extensão do suporte para o XML:<br>
     sudo apt-get install php-xml
     
-Instalando a extensão do zip do php<br>
+Instalando a extensão do zip do php:<br>
     sudo apt-get install php-zip
 
-Baixando e instalando o composer<br>
+Baixando e instalando o composer:<br>
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-Testando o composer<br>
+Testando o composer:<br>
     composer
 
-Rodar o composer sem o sudo<br>
+Rodar o composer sem o sudo:<br>
     sudo chown -R $USER ~/.composer/
 
-Inicializar um projeto sem o instalador<br>
+Inicializar um projeto sem o instalador:<br>
     composer create-project --prefer-dist laravel/laravel project-name
     
-Instalando o instalador do laravel<br>
+Instalando o instalador do laravel:<br>
     composer global require "laravel/installer"
 
-Para o comando laravel funcionar precisamos adicionar uma linha no arquivo bashrc se você estiver usando apenas o terminal<br>
+Para o comando laravel funcionar precisamos adicionar uma linha no arquivo bashrc se você estiver usando apenas o terminal:<br>
     echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc

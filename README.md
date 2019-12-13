@@ -59,9 +59,9 @@ Criando Banco de dados (O Laravel não cria automaticamente)<br>
 create database pdv;
 
 Criar um usuário chamado pdv:<br>
-CREATE USER 'pdv'@'localhost' IDENTIFIED BY '123456';<br><br>
+CREATE USER 'pdv'@'localhost' IDENTIFIED BY '123456';<br>
 
-GRANT ALL PRIVILEGES ON  pdv.* TO 'pdv'@'localhost';<br><br>
+GRANT ALL PRIVILEGES ON  pdv.* TO 'pdv'@'localhost';<br>
 	
-FLUSH PRIVILEGES;<br><br>
+FLUSH PRIVILEGES;<br>
 exit;

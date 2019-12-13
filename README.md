@@ -77,3 +77,5 @@ composer install
 Executando servidor (Rodar na pasta raiz da Aplicação)<br>
 php artisan serve
 
+É "só" isso :D
+

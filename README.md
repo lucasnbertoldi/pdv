@@ -17,6 +17,8 @@ O Laravel é um framework de desenvolvimento rápido para PHP, livre e de códig
 
 ## Instalação do Ambiente no Ubuntu 18.04
 
+<h4>Instalando e configurando o Laravel</h4>
+
 Instalando o PHP:<br>
     sudo apt-get install php
 
@@ -50,3 +52,16 @@ Instalando o instalador do laravel:<br>
 Para o comando laravel funcionar precisamos adicionar uma linha no arquivo bashrc se você estiver usando apenas o terminal:<br>
     echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
+
+<h4>Mysql</h4>
+
+Criando Banco de dados (O Laravel não cria automaticamente)<br>
+create database pdv;
+
+Criar um usuário chamado pdv:<br>
+CREATE USER 'pdv'@'localhost' IDENTIFIED BY '123456';<br><br>
+
+GRANT ALL PRIVILEGES ON  pdv.* TO 'pdv'@'localhost';<br><br>
+	
+FLUSH PRIVILEGES;<br><br>
+exit;

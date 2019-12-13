@@ -66,7 +66,7 @@ GRANT ALL PRIVILEGES ON  pdv.* TO 'pdv'@'localhost';<br>
 FLUSH PRIVILEGES;<br>
 exit;<br>
 
-Rodar dentro da pasta do projeto o comando:<br>
+Fazer o migrate do BD (Rodar na pasta raiz da Aplicação)<br>
 php artisan migrate
 
 <h4>Rodando aplicação</h4>
@@ -74,6 +74,6 @@ php artisan migrate
 Instalando dependencias do Projeto (Rodar na pasta raiz da Aplicação):<br>
 composer install
 
-Executando servidor \o/<br>
+Executando servidor (Rodar na pasta raiz da Aplicação)<br>
 php artisan serve
 

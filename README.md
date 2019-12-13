@@ -1,6 +1,6 @@
 ## Descrição
 
-Projeto utilizando o Framework Laravel para a disciplina Programação para Web do Curso de Pós Graduação do IFBA Vitória da Conquista - BA
+Projeto de um Ponto de Venda com cadastros de Cliente, Produto e Venda, utilizando o Framework Laravel, para a disciplina Programação para Web, do Curso de Pós Graduação do IFBA de Vitória da Conquista - BA
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 

@@ -53,7 +53,7 @@ Para o comando laravel funcionar precisamos adicionar uma linha no arquivo bashr
     echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 
-<h4>Mysql</h4>
+<h4>Configurando Mysql Versão (5.6)</h4>
 
 Criando Banco de dados (O Laravel não cria automaticamente)<br>
 create database pdv;
@@ -64,4 +64,16 @@ CREATE USER 'pdv'@'localhost' IDENTIFIED BY '123456';<br>
 GRANT ALL PRIVILEGES ON  pdv.* TO 'pdv'@'localhost';<br>
 	
 FLUSH PRIVILEGES;<br>
-exit;
+exit;<br>
+
+Rodar dentro da pasta do projeto o comando:<br>
+php artisan migrate
+
+<h4>Rodando aplicação</h4>
+
+Instalando dependencias do Projeto (Rodar na pasta raiz da Aplicação):<br>
+composer install
+
+Executando servidor \o/<br>
+php artisan serve
+
